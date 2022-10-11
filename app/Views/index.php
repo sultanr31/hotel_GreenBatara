@@ -12,7 +12,6 @@
   <link rel="shortcut icon" href="CH.png" type="image/x-icon">
   <meta name="description" content="">
   
-  
   <title>CH Hotel</title>
   <link rel="stylesheet" href="/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
@@ -24,15 +23,11 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
 </head>
 <body>
   
   <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
+
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
@@ -41,7 +36,7 @@
                         <img src="https://media.discordapp.net/attachments/768689302010986546/1026721760613244928/GreemBatara.png?width=480&height=480" alt="Mobirise Website Builder" style="height: 3.8rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-7" href="home.php">Green Batara Hotel</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-7" href="/index.php">Green Batara Hotel</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -55,7 +50,7 @@
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="rservice.php">Room Service</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="checkin.php">My Order</a></li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="customer.php">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="/adminIndex/">Admin</a></li>
                 </ul>
             </div>
         </div>
@@ -78,8 +73,8 @@
                             <strong>Selamat Datang!</strong></h6>
                         <p class="mbr-text mbr-fonts-style mb-4 display-4">
                         Terinspirasi oleh keindahan Green Batara, Hotel Green Batara Bandung menawarkan pemandangan gunung yang spektakuler, santapan yang memanjakan, kamar-kamar yang elegan, dan keramahan luar biasa yang diwujudkan oleh Butler Service 24 jam. Terletak di perbukitan Ciumbuleuit, namun hanya beberapa menit dari hiruk pikuk pusat kota Bandung.</p>
-                        <div class="mbr-section-btn mt-3"><a class="btn btn-black display-7" href="reservasi.php"><span class="mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn" style="font-size: 20px;"></span>Pesan Kamar</a>
-                        <a class="btn btn-success display-7" href="customer.php"><span class="mobi-mbri mbr-iconfont mbr-iconfont-btn" style="font-size: 17px;"></span>Halaman Admin</a>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-black display-7" href="/konsumenIndex/"><span class="mobi-mbri mobi-mbri-plus mbr-iconfont mbr-iconfont-btn" style="font-size: 20px;"></span>Pesan Kamar</a>
+                        <a class="btn btn-success display-7" href="/adminIndex/"><span class="mobi-mbri mbr-iconfont mbr-iconfont-btn" style="font-size: 17px;"></span>Halaman Admin</a>
                         </div>
                     </div>
                 </div>
@@ -89,11 +84,6 @@
 </section>
 
 <section data-bs-version="5.1" class="gallery5 mbr-gallery cid-t6E75YveNg" id="gallery5-q">
-    
-
-    
-    
-
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style align-center m-0 display-2"><strong>Tipe Kamar</strong></h3>
@@ -186,30 +176,13 @@
 </section>
 
 <section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
-
-    
-
-    
-
     <div class="container">
         <div class="media-container-row align-center mbr-white">
             <div class="row row-links">
                 <ul class="foot-menu">
-                    
-                    
-                    
-                    
-                    
- 
             </div>
             <div class="row social-row">
-                <div class="social-list align-right pb-2">
-                    
-                    
-                    
-                    
-                    
-                    
+                <div class="social-list align-right pb-2">      
                 <div class="soc-item">
                         <a href="" target="_blank">
                             <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
@@ -235,8 +208,29 @@
         </div>
     </div>
 </section>
-<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"> &#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/embla/embla.min.js"></script>  <script src="assets/embla/script.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
+<section class="display-7" 
+    style="padding: 0;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            display: flex;
+            position: relative;
+            height: 4rem;">
+            <a href="https://mobiri.se/" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;">
+                <img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+            </a>
+            <p style="margin: 0;text-align: center;" class="display-7"> &#8204;</p>
+            <a style="z-index:1" href="https://mobirise.com/html-builder.html"></a>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="assets/smoothscroll/smooth-scroll.js"></script> 
+<script src="assets/ytplayer/index.js"></script>  
+<script src="assets/embla/embla.min.js"></script>  
+<script src="assets/embla/script.js"></script> 
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/theme/js/script.js"></script>  
   
 </body>
 </html>
