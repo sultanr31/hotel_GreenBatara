@@ -53,6 +53,16 @@
         <th>Rating</th>
         <th></th>
     </thead>
+    <tbody>
+        <th>1</th>
+        <th>Ahmad Al Farizi</th>
+        <th>085219495321</th>
+        <th>King Suite</th>
+        <th>12-10-2022</th>
+        <th>14-10-2022</th>
+        <th>Lunas</th>
+        <th>4.0</th>
+    </tbody>
     </table>
     </p>
     </div>

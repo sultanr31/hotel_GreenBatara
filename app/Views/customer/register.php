@@ -10,43 +10,19 @@
 <html>
 <body>
     <div class="container">
-        <form action="register.php" method="POST" class="login-email">
+        <form action="/create/" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register Konsumen</p>
             <div class="input-group">
-                <input type="text" placeholder="Nama" name="nama" required>
-            </div>
             <div class="input-group">
                 <input type="email" placeholder="Email" name="email" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Nomor KTP" name="noktp" required>
-            </div>
-            <div class="input-group">
-                <input list="list_jk" placeholder="Kelamin" name="jk" required >
-                <datalist id="list_jk">
-                    <option value="Laki-Laki">
-                    <option value="Perempuan">
-                </datalist>
-            </div>
-            <div class="input-group">
-                <input type="text" placeholder="Tempat Lahir" name="tempatlahir" required>
-            </div>
-            <div class="input-group">
-                <input type="date" placeholder="Tanggal Lahir" name="tanggal" required>
-            </div>
-            <div class="input-group">
-                <input type="text" placeholder="Alamat" name="alamat" required>
-            </div>
-            <div class="input-group">
-                <input type="text" placeholder="Nomor HP" name="nohp" required>
-            </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password" name="passwords" required>
+                <input type="password" placeholder="Password" name="pass_konsumen" required>
             </div>
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>
             </div>
-            <p class="login-register-text">Anda Sudah punya akun? <a href="Login.php">Login</a></p>
+            <p class="login-register-text">Anda Sudah punya akun? <a href="/konsumenIndex/">Login</a></p>
         </form>
     </div>
 </body>

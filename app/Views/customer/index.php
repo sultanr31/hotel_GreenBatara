@@ -10,13 +10,13 @@
 <html>
 <body>
     <div class="container">
-        <form action="login.php" method="POST" class="login-email">
+        <form action="/auth_konsumen/" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login Konsumen</p>
             <div class="input-group">
-                <input type="text" placeholder="Nomor KTP" name="no_ktp" required>
+                <input type="text" placeholder="Email" name="email" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" name="passwords" required>
+                <input type="password" placeholder="Password" name="pass_konsumen" required>
             </div>
             <div class="input-group">
                 <button name="submitLogin" class="btn">Login</button>

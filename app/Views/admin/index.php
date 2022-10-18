@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <form action="/dashboard/" method="post" class="login-email">
+        <form action="/auth/" method="post" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login ADMIN</p>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Username" name="username" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" name="pass" required>
+                <input type="password" placeholder="Password" name="pass_admin" required>
             </div>
             <div class="input-group">
                 <button name="submit" class="btn">Login</button>
