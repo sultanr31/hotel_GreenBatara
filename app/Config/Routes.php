@@ -44,6 +44,16 @@ $routes->get('/register', 'Konsumen::register');
 $routes->post('/create', 'Konsumen::create');
 $routes->post('/auth', 'Admin::auth');
 $routes->post('/auth_konsumen', 'Konsumen::auth');
+$routes->get('/forgot_password', 'Konsumen::forgot_passsword');
+$routes->get('/reservasi', 'Admin::reservasi');
+$routes->get('/reservasi_konsumen', 'Konsumen::reservasi');
+$routes->get('/logout', 'Pages::logout');
+$routes->get('/profil', 'Konsumen::profil');
+$routes->get('/editprofil', 'Konsumen::editprofil');
+$routes->post('/saveprofil', 'Konsumen::saveprofil');
+$routes->get('/createreservasi', 'Konsumen::createreservasi');
+$routes->post('/savereservasi', 'Konsumen::savereservasi');
+$routes->get('/feedback', 'Konsumen::feedback');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

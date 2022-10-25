@@ -50,4 +50,36 @@ class Konsumen extends BaseController
     {
         return view('customer/register.php');
     }
+    public function forgot_password()
+    {
+        return view('customer/forgot_password.php');
+    }
+    public function profil()
+    {
+        return view('customer/profil.php');
+    }
+    public function reservasi()
+    {
+        return view('customer/reservasi.php');
+    }
+    public function feedback()
+    {
+        return view('customer/feedback.php');
+    }
+    public function editprofil()
+    {
+        return view('customer/editprofil.php');
+    }
+    public function saveprofil()
+    {
+        return view('customer/profil.php');
+    }
+    public function createreservasi()
+    {
+        return view('customer/create_reservasi.php');
+    }
+    public function savereservasi()
+    {
+        return view('customer/reservasi.php');
+    }
 }

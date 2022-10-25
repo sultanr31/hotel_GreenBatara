@@ -25,4 +25,9 @@ class Admin extends BaseController
             return redirect()->to('/adminIndex');
         }
     }
+    
+    public function reservasi()
+    {
+        return view('admin/checkin.php');
+    }
 }

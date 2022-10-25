@@ -27,4 +27,8 @@ class Pages extends BaseController
     {
         return view('customer/index.php');
     }
+    public function logout()
+    {
+        return view('index.php');
+    }
 }
