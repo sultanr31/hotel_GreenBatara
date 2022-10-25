@@ -1,76 +1,266 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/768689302010986546/1026721760613244928/GreemBatara.png?width=480&height=480"/>
-    <title>GB Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-<body style="background-color: #1A3C40;" align = center>
-<section>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1A3C40">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/dashboard/">
-                <img src="https://media.discordapp.net/attachments/768689302010986546/1026721760613244928/GreemBatara.png?width=480&height=480" alt="" width="66" height="66" class="d-inline-block align-text-top">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="btn btn-light ms-2" aria-current="page" href="customer.php"><b>Customer</b></a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="btn btn-light ms-2" aria-current="page" href="laporan.php"><b>Laporan</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-light ms-2" aria-current="page" href="service.php"><b>Room Service</b></a>
-                  </li>
-              </div>
+<?php echo view('layout/header'); ?>
+<div class="page-heading">
+    <h3>Profile Statistics</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-9">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon purple mb-2">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Profile Views</h6>
+                                    <h6 class="font-extrabold mb-0">112.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon blue mb-2">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Followers</h6>
+                                    <h6 class="font-extrabold mb-0">183.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon green mb-2">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Following</h6>
+                                    <h6 class="font-extrabold mb-0">80.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon red mb-2">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Saved Post</h6>
+                                    <h6 class="font-extrabold mb-0">112</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-profile-visit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-primary" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Europe</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">862</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-europe"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-success" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">America</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">375</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-america"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-danger" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Indonesia</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">1025</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-indonesia"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Comments</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-lg">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="/assets/images/faces/5.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Congratulations on your graduation!</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="/assets/images/faces/2.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Wow amazing design! Can you make another tutorial for
+                                                    this design?</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3">
+            <div class="card">
+                <div class="card-body py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="/assets/images/faces/1.jpg" alt="Face 1">
+                        </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">John Duck</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Recent Messages</h4>
+                </div>
+                <div class="card-content pb-4">
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="/assets/images/faces/4.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Hank Schrader</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="/assets/images/faces/5.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Dean Winchester</h5>
+                            <h6 class="text-muted mb-0">@imdean</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/images/faces/1.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">John Dodol</h5>
+                            <h6 class="text-muted mb-0">@dodoljohn</h6>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <button class='btn btn-block btn-xl btn-outline-primary font-bold mt-3'>Start Conversation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Visitors Profile</h4>
+                </div>
+                <div class="card-body">
+                    <div id="chart-visitors-profile"></div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <br>
-        <h3 class="text-start ms-4 text-light fw-light">Customer</h3>
-        <br>
-    </section>
-
-    <section>
-    <div class="card ms-4" style="width: 70rem;">
-    <div class="card-body" >
-    <p class="card-text">
-    <table class="table table-light table-hover">
-    <thead>
-        <th>No.</th>
-        <th>Nama</th>
-        <th>No. Telp</th>
-        <th>Tipe Kamar</th>
-        <th>Check-in</th>
-        <th>Check-out</th>
-        <th>Status</th>
-        <th>Rating</th>
-        <th></th>
-    </thead>
-    <tbody>
-        <th>1</th>
-        <th>Ahmad Al Farizi</th>
-        <th>085219495321</th>
-        <th>King Suite</th>
-        <th>12-10-2022</th>
-        <th>14-10-2022</th>
-        <th>Lunas</th>
-        <th>4.0</th>
-    </tbody>
-    </table>
-    </p>
-    </div>
-    </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <br>
-    <br>
-    <br>
-</body>
-</html>
+</div>
+<?php echo view('layout/footer'); ?>

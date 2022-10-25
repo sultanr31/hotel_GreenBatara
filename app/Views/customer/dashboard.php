@@ -1,257 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="/css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <!-- top navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top sidenav">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#sidebar"
-          aria-controls="offcanvasExample"
-        >
-          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
-        </button>
-        <a
-          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
-          href="#"
-          >Green Batara Hotel</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#topNavBar"
-          aria-controls="topNavBar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="topNavBar">
-          <form class="d-flex ms-auto my-3 my-lg-0">
-            <div class="input-group">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-primary" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
+<?php echo view('layout/header_konsumen'); ?>
+<div class="page-heading">
+    <h3>Profile Statistics</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-9">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon purple mb-2">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Profile Views</h6>
+                                    <h6 class="font-extrabold mb-0">112.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon blue mb-2">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Followers</h6>
+                                    <h6 class="font-extrabold mb-0">183.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon green mb-2">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Following</h6>
+                                    <h6 class="font-extrabold mb-0">80.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon red mb-2">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Saved Post</h6>
+                                    <h6 class="font-extrabold mb-0">112</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </form>
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle ms-2"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="bi bi-person-fill"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profil</a></li>
-                <li><a class="dropdown-item" href="#">Setting</a></li>
-                <li>
-                  <a class="dropdown-item" href="#"></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-profile-visit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-primary" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Europe</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">862</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-europe"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-success" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">America</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">375</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-america"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-danger" width="32" height="32" fill="blue"
+                                            style="width:10px">
+                                            <use
+                                                xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Indonesia</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">1025</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-indonesia"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Comments</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-lg">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="/assets/images/faces/5.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Congratulations on your graduation!</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="/assets/images/faces/2.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Wow amazing design! Can you make another tutorial for
+                                                    this design?</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <!-- top navigation bar -->
-    <!-- offcanvas -->
-    <div
-      class="offcanvas offcanvas-start sidebar-nav bg-dark"
-      tabindex="-1"
-      id="sidebar"
-    >
-      <div class="offcanvas-body p-0">
-        <nav class="navbar-dark">
-          <ul class="navbar-nav">
-            <li>
-              <div class="text-muted small fw-bold text-uppercase px-3">
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3 active mt-4">
-                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                <span>Dashboard</span>
-              </a>
-            </li>
-            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-            <li>
-              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-                Layanan
-              </div>
-            </li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Reservasi Kamar</span>
-              </a>
-            </li>
-            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-            <li>
-              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-                Addons
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-table"></i></span>
-                <span>Check-In</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-table"></i></span>
-                <span>Check-Out</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!-- offcanvas -->
-    <main class="mt-5 pt-3">
-      <!-- <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Dashboard</h4>
-          </div>
+        <div class="col-12 col-lg-3">
+            <div class="card">
+                <div class="card-body py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="/assets/images/faces/1.jpg" alt="Face 1">
+                        </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">John Duck</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Recent Messages</h4>
+                </div>
+                <div class="card-content pb-4">
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="/assets/images/faces/4.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Hank Schrader</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="/assets/images/faces/5.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Dean Winchester</h5>
+                            <h6 class="text-muted mb-0">@imdean</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/images/faces/1.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">John Dodol</h5>
+                            <h6 class="text-muted mb-0">@dodoljohn</h6>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <button class='btn btn-block btn-xl btn-outline-primary font-bold mt-3'>Start Conversation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Visitors Profile</h4>
+                </div>
+                <div class="card-body">
+                    <div id="chart-visitors-profile"></div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <div class="card bg-primary text-white h-100">
-              <div class="card-body py-5">Primary Card</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Warning Card</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-success text-white h-100">
-              <div class="card-body py-5">Success Card</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-danger text-white h-100">
-              <div class="card-body py-5">Danger Card</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="card ms-5 mt-4" style="width: 40rem;">
-          <div class="card-body ms-5">
-            <h5 class="card-title">Pemesanan Kamar</h5>
-            <p class="card-text">
-            <form action="" method="post">
-                <table cellspacing="2" cellpadding="4">
-                    <tbody>
-                    <tr>
-                    <td>Nama</td>
-                    <td>: <input type="text" name="nama" id="nama" required><br></td>
-                </tr>    
-                <tr>
-                    <td>No. Telp</td>
-                    <td>: <input type="text" name="telp" id="telp" required><br></td>
-                </tr>   
-                <tr>
-                    <td>Tipe Kamar</td>
-                    <td><input type="radio" name="tipe" id="studio1" value="Studio 1" required> Studio 1 (Rp. 400K/Malam)<br></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="radio" name="tipe" id="studio2" value="Studio 2" required> Studio 2 (Rp. 525K/Malam)</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="radio" name="tipe" id="suite" value="Suite" required> Suite (Rp. 800K/Malam)</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="radio" name="tipe" id="ksuite" value="King Suite" required> King Suite (Rp. 1.1K/Malam)</td>
-                </tr>
-                <tr>
-                    <td>Check-in</td>
-                    <td>: <input type="date" name="cin" id="cin" required><br></td>
-                </tr>
-                <tr>
-                    <td>Check-out</td>
-                    <td>: <input type="date" name="cout" id="cout" required><br></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="hidden" name="status" value="-"> </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="hidden" name="rating" value="-"> </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="hidden" name="layanan" value="-"> </td>
-                </tr>
-                
-                </tbody>
-                </table>
-                <br>
-                <button type="submit" name="submit" class="btn btn-dark btn-lg">Pesan Kamar</button>
-            </form>
-            </p>
-          </div>
-        </div>
-    </main>
-    <script src="/./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
-    <script src="/./js/jquery-3.5.1.js"></script>
-    <script src="/./js/jquery.dataTables.min.js"></script>
-    <script src="/./js/dataTables.bootstrap5.min.js"></script>
-    <script src="/./js/script.js"></script>
-  </body>
-</html>
+    </section>
+</div>
+<?php echo view('layout/footer'); ?>
