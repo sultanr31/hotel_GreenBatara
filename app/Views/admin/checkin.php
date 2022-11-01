@@ -26,37 +26,38 @@
                 <table class="table" id="table1">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>City</th>
+                            <th>No.</th>
+                            <th>Nama</th>
+                            <th>Tipe Kamar</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>No. Telepon</th>
                             <th>Status</th>
+                            <th>Rating</th>
+                            <th>Layanan</th>
+                            <th>Total Tagihan</th>
+
                         </tr>
                     </thead>
                     <tbody>
+                        <?php $i =1; ?>
+                        <?php foreach($customer as $k) : ?>
                         <tr>
-                            <td>Graiden</td>
-                            <td>vehicula.aliquet@semconsequat.co.uk</td>
-                            <td>Offenburg</td>
-                            <td>
+                            <td><?= $i++; ?></td>
+                            <td><?= $k['nama'] ?></td>
+                            <td><?= $k['tipe'] ?></td>
+                            <td><?= $k['cin'] ?></td>
+                            <td><?= $k['cout'] ?></td>
+                            <td><?= $k['telp'] ?></td>
+                            <td><?= $k['status'] ?></td>
+                            <td><?= $k['rating'] ?></td>
+                            <td><?= $k['layanan'] ?></td>
+                            <td><?= $k['total_tagihan'] ?></td>
+                            <!-- <td>
                                 <span class="badge bg-success">Active</span>
-                            </td>
+                            </td> -->
                         </tr>
-                        <tr>
-                            <td>Nathaniel</td>
-                            <td>mi.Duis@diam.edu</td>
-                            <td>Grumo Appula</td>
-                            <td>
-                                <span class="badge bg-danger">Inactive</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Darius</td>
-                            <td>velit@nec.com</td>
-                            <td>Ways</td>
-                            <td>
-                                <span class="badge bg-success">Active</span>
-                            </td>
-                        </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
