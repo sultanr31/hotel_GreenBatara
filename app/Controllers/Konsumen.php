@@ -2,9 +2,13 @@
 
 namespace App\Controllers;
 use App\Models\KonsumenModel;
+use App\Models\databaseModel;
 
 class Konsumen extends BaseController
 {
+    function __construct(){
+        $this->customer = new databaseModel();
+    }
     public function auth()
     {
         $konsumen = new KonsumenModel();
@@ -60,7 +64,8 @@ class Konsumen extends BaseController
     }
     public function reservasi()
     {
-        return view('customer/reservasi.php');
+        $data['customer'] = $this->customer->findAll();
+        return view('customer/reservasi.php', $data);
     }
     public function feedback()
     {
@@ -80,6 +85,33 @@ class Konsumen extends BaseController
     }
     public function savereservasi()
     {
+        $dataModel = new databaseModel();
+
+        $count = $this->request->getPost('count');
+        $tipe = $this->request->getPost('tipe');
+
+        $harga = 0;
+
+        if($this->request->getPost('tipe')=="Studio") $harga = 400000;
+        else if ($this->request->getPost('tipe')=="Studio II")  $harga = 500000;
+        else if ($this->request->getPost('tipe')=="Suite") $harga = 750000;
+        else $harga = 11000000;
+
+        $hargaTotal = $harga * $count;
+
+        $data = [
+            'nama' => $this->request->getPost('nama'),
+            'telp' => $this->request->getPost('telp'),
+            'tipe' => $this->request->getPost('tipe'),
+            'cin' => $this->request->getPost('tgl_cin'),
+            'cout' => $this->request->getPost('tgl_cin')."INTERVAL $count DAY",
+            'status' => '-',
+            'rating' => '-',
+            'layanan' => '-',
+            'total_tagihan' => $hargaTotal
+        ];
+
+        $dataModel->insert($data);
         return view('customer/reservasi.php');
     }
 }

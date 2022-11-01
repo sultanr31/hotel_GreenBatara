@@ -37,7 +37,7 @@
                                         <div class="col-md-8">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" placeholder="Name" id="first-name-icon">
+                                                    <input type="text" class="form-control" placeholder="Name" name="nama" id="first-name-icon">
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-person"></i>
                                                     </div>
@@ -50,7 +50,7 @@
                                         <div class="col-md-8">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="number" class="form-control" placeholder="Mobile">
+                                                    <input type="number" class="form-control" name="telp" placeholder="Mobile">
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-phone"></i>
                                                     </div>
@@ -62,7 +62,7 @@
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-group">
-                                                <select class="choices form-select">
+                                                <select name="tipe" class="choices form-select">
                                                     <option value="studio">Studio Rp 400000</option>
                                                     <option value="studio II">Studio II Rp 500000</option>
                                                     <option value="suite">Suite Rp 750000</option>
@@ -76,35 +76,22 @@
                                         <div class="col-md-8">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="date" class="form-control" placeholder="Tanggal Check In">
+                                                    <input type="date" name="tgl_cin" class="form-control" placeholder="Tanggal Check In">
                                                     <div class="form-control-icon">
-                                                        <i class="bi bi-phone"></i>
+                                                        <i class="bi bi-date"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <label>Tanggal Check Out</label>
+                                            <label>Jumlah Hari Inap</label>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group has-icon-left">
                                                 <div class="position-relative">
-                                                    <input type="date" class="form-control" placeholder="Tanggal Check In">
+                                                    <input type="number" name="count" class="form-control" placeholder="Maksimal 10 Hari">
                                                     <div class="form-control-icon">
-                                                        <i class="bi bi-phone"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label>Total Harga</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group has-icon-left">
-                                                <div class="position-relative">
-                                                    <input type="number" class="form-control" placeholder="5000000" disabled>
-                                                    <div class="form-control-icon">
-                                                        <i class="bi bi-phone"></i>
+                                                        <i class="bi bi-date"></i>
                                                     </div>
                                                 </div>
                                             </div>
