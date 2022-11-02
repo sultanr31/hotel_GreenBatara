@@ -3,9 +3,14 @@
 namespace App\Controllers;
 
 use App\Models\adminModel;
+use App\Models\databaseModel;
 
 class Admin extends BaseController
 {
+    function __construct(){
+        $this->customer = new databaseModel();
+    }
+    
     public function auth()
     {
         $adminMo = new AdminModel();
@@ -28,6 +33,7 @@ class Admin extends BaseController
     
     public function reservasi()
     {
+        $data['customer'] = $this->customer->findAll();
         return view('admin/checkin.php');
     }
 }
