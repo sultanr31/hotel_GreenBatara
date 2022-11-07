@@ -34,6 +34,6 @@ class Admin extends BaseController
     public function reservasi()
     {
         $data['customer'] = $this->customer->findAll();
-        return view('admin/checkin.php');
+        return view('admin/checkin.php', $data);
     }
 }
