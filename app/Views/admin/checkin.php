@@ -1,17 +1,17 @@
-<?php echo view('layout/header'); ?>          
-<div class="page-heading">
+<?= $this->extend('layout/sidenav'); ?>
+<?= $this->section('admin'); ?>   
+    
+<div class="container-fluid">
     <div class="page-title">
         <div class="row">
-            <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Reservasi Kamar</h3>
+            <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                <h3 class="text-dark mb-0">Reservasi Kamar</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="background: rgb(34,146,43);"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
             </div>
-            <div class="col-12 col-md-6 order-md-2 order-first">
-                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Reservasi</li>
-                    </ol>
-                </nav>
+            <div class="col-12 col-md-6 order-md-2 order-first">               
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Reservasi</li>
+                </ol>               
             </div>
         </div>
     </div>
@@ -66,4 +66,4 @@
     </section>
     <!-- Basic Tables end -->
 </div>
-<?php echo view('layout/footer'); ?>
+<?= $this->endSection(); ?>
