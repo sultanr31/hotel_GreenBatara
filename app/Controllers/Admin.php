@@ -9,8 +9,10 @@ class Admin extends BaseController
 {
     function __construct(){
         $this->customer = new databaseModel();
+        parent::__construct();
+        if($this->session->logged_in) return view('admin/index');
     }
-    
+
     public function auth()
     {
         $adminMo = new AdminModel();
@@ -34,6 +36,6 @@ class Admin extends BaseController
     public function reservasi()
     {
         $data['customer'] = $this->customer->findAll();
-        return view('admin/checkin.php');
+        return view('admin/checkin.php', $data);
     }
 }

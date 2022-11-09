@@ -5,12 +5,9 @@ use App\Models\databaseModel;
 
 class Pages extends BaseController
 {
-    protected $session;
-
     public function __construct()
     {
-        $this->session = \Config\Services::session();
-        $this->session->start();
+        parent::__construct();
     }
 
     public function index()
@@ -31,12 +28,9 @@ class Pages extends BaseController
 
         return view('admin/dashboard.php', $data);
     }
-    public function loginKonsumen()
-    {
-        return view('customer/index.php');
-    }
     public function logout()
     {
+        $this->session->destroy();
         return view('index.php');
     }
 }
