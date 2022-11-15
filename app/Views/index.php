@@ -99,7 +99,7 @@
                         <div class="card text-center clean-card">
                             <div class="card-body info">
                                 <h4 class="card-title">Muhammad Sultan</h4>
-                                <p class="card-text">Perancang sistem penginapan yang berbeda dengan yang lain.</p>
+                                <p class="card-text">Perancang sistem penginapan dengan prinsip "Float like a butterfly, sting like a bee".</p>
                                 <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="card text-center clean-card">
                             <div class="card-body info">
                                 <h4 class="card-title">Thoriq Al Fajri</h4>
-                                <p class="card-text">Pelatih kedisiplinan karyawan di hotel ini.</p>
+                                <p class="card-text">Memilih karyawan terbaik dengan prinsip "With great power comes great responsibility".</p>
                                 <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                             </div>
                         </div>
